@@ -19,11 +19,11 @@ public class OrderDao {
         throw new UnsupportedOperationException();
     }
 
-    public static Order create(Order specification) {
+    public static Order create(Order order) {
         throw new UnsupportedOperationException();
     }
 
-    public static Order update(Order specification) {
+    public static Order update(Long id, Order order) {
         throw new UnsupportedOperationException();
     }
 }

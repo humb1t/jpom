@@ -76,9 +76,9 @@ public class Main {
                     ApiBuilder.patch(SpecificationController.update);
                     ApiBuilder.delete(SpecificationController.delete);
                 });
-                path("search", () -> {
-                    ApiBuilder.get(SpecificationController.getByName);
-                });
+            });
+            path("search", () -> {
+                ApiBuilder.get(SpecificationController.getByName);
             });
             path("products", () -> {
                 ApiBuilder.get(ProductController.getAll);

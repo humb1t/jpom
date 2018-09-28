@@ -27,7 +27,7 @@ public class SpecificationDao {
         throw new UnsupportedOperationException();
     }
 
-    public static Specification update(Specification specification) {
+    public static Specification update(Long id, Specification specification) {
         throw new UnsupportedOperationException();
     }
 

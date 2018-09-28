@@ -4,9 +4,9 @@ import io.javalin.Handler;
 
 public class SpecificationController {
     public static Handler getByName = context -> {
-        final Long id = Long.valueOf(context.queryParam("name"));
+        final String name = context.queryParam("name");
         context.json(
-                SpecificationDao.getById(id)
+                SpecificationDao.getByName(name)
         );
     };
     public static Handler delete = context -> {
@@ -14,9 +14,10 @@ public class SpecificationController {
         SpecificationDao.delete(id);
     };
     public static Handler update = context -> {
-//        final Long id = Long.valueOf(context.pathParam("id"));
+        final Long id = Long.valueOf(context.pathParam("id"));
         context.json(
                 SpecificationDao.update(
+                        id,
                         context.bodyAsClass(Specification.class)
                 )
         );

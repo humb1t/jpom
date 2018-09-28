@@ -1,18 +1,13 @@
 package org.zayac.jpom.order;
 
 import lombok.Data;
-import org.zayac.jpom.specification.Specification;
 
 @Data
 public class Order {
     private Long id;
-    private Specification specification;
+    private Long specificationId;
     private Long quantity;
     private Status status;
-
-    public Order(Specification specification) {
-        this.specification = specification;
-    }
 
     public Order() {
     }

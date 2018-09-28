@@ -4,8 +4,16 @@ import io.javalin.Handler;
 
 public class OrderController {
     public static Handler getAll = context -> {
+        context.json(
+                OrderDao.getAll()
+        );
     };
     public static Handler create = context -> {
+        context.json(
+                OrderDao.create(
+                        context.bodyAsClass(Order.class)
+                )
+        );
     };
     public static Handler get = context -> {
         final Long id = Long.valueOf(context.pathParam("id"));
@@ -17,7 +25,7 @@ public class OrderController {
         final Long id = Long.valueOf(context.pathParam("id"));
         context.json(
                 OrderDao.update(
-                        OrderDao.getById(id).start()
+                        id, OrderDao.getById(id).start()
                 )
         );
     };
@@ -25,7 +33,7 @@ public class OrderController {
         final Long id = Long.valueOf(context.pathParam("id"));
         context.json(
                 OrderDao.update(
-                        OrderDao.getById(id).cancel()
+                        id, OrderDao.getById(id).cancel()
                 )
         );
     };
@@ -33,6 +41,7 @@ public class OrderController {
         final Long id = Long.valueOf(context.pathParam("id"));
         context.json(
                 OrderDao.update(
+                        id,
                         context.bodyAsClass(Order.class)
                 )
         );
