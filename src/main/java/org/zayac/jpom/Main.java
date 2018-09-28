@@ -4,7 +4,6 @@ import static io.javalin.apibuilder.ApiBuilder.path;
 
 import com.github.jasync.sql.db.Configuration;
 import com.github.jasync.sql.db.Connection;
-import com.github.jasync.sql.db.QueryResult;
 import com.github.jasync.sql.db.pool.ConnectionPool;
 import com.github.jasync.sql.db.pool.PoolConfiguration;
 import com.github.jasync.sql.db.postgresql.pool.PostgreSQLConnectionFactory;
@@ -20,7 +19,6 @@ import org.zayac.jpom.product.ProductDao;
 import org.zayac.jpom.specification.SpecificationController;
 import org.zayac.jpom.specification.SpecificationDao;
 
-import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.TimeUnit;
 
 public class Main {
@@ -46,7 +44,28 @@ public class Main {
                 .event(JavalinEvent.SERVER_STARTING, () -> {
                     logger.info("--- SERVER STARTING!");
                     connection.connect().get();
+                    connection.sendPreparedStatement("DROP TABLE IF EXISTS orders").join();
+                    logger.info("orders dropped");
+                    connection.sendPreparedStatement("DROP TYPE IF EXISTS order_status").join();
+                    logger.info("order_status dropped");
+                    connection.sendPreparedStatement("DROP TABLE IF EXISTS products").join();
+                    logger.info("products dropped");
+                    connection.sendPreparedStatement("DROP TABLE IF EXISTS specifications").join();
+                    logger.info("specification dropped");
                     logger.info("--- connection STARTED!");
+                    connection.sendPreparedStatement(
+                            "CREATE TABLE specifications (id SERIAL PRIMARY KEY, name VARCHAR NOT NULL)"
+                    );
+                    connection.sendPreparedStatement(
+                            "CREATE TABLE products (id SERIAL PRIMARY KEY, specification_id INTEGER NOT NULL, FOREIGN KEY (specification_id) REFERENCES specifications(id))"
+                    );
+                    connection.sendPreparedStatement(
+                            "CREATE TYPE order_status AS ENUM ('entering', 'in_progress', 'cancelled', 'completed')"
+                    );
+                    connection.sendPreparedStatement(
+                            "CREATE TABLE orders (id SERIAL PRIMARY KEY, specification_id INTEGER NOT NULL, product_id INTEGER NOT NULL, quantity INTEGER NOT NULL, status order_status NOT NULL, FOREIGN KEY (specification_id) REFERENCES specifications(id), FOREIGN KEY (product_id) REFERENCES products(id))"
+                    );
+                    logger.info("--- SCHEMA INITIALIZED!");
                 })
                 .event(JavalinEvent.SERVER_STOPPING, () -> {
                     logger.info("--- SERVER STOPPING!");
@@ -85,14 +104,5 @@ public class Main {
                 path(":id", () -> ApiBuilder.get(ProductController.get));
             });
         });
-        app.get("/",
-                ctx -> {
-                    final CompletableFuture<QueryResult> queryResultCompletableFuture = connection.sendPreparedStatement("select 0");
-                    ctx.result(
-                            queryResultCompletableFuture
-                                    .thenApply((t) -> "got result: " + t.getRows().get(0).get(0))
-                    );
-                }
-        );
     }
 }
