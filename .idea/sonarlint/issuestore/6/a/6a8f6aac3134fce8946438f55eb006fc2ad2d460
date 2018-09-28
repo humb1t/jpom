@@ -1,0 +1,10 @@
+
+Ssquid:S1481;"5Remove this unused "specificationDao" local variable.(μ΅8—Λεγα,
+Osquid:S1602P",Remove useless curly braces around statement(ΆΠΖύωÿÿÿÿ8©δα,
+lsquid:S1192'"IDefine a constant instead of duplicating this literal "postgres" 3 times.(‹βοϊÿÿÿÿ8Φ–ώβα,
+bsquid:S1854;"DRemove this useless assignment to local variable "specificationDao".(μ΅8—Λεγα,
+asquid:S1854:">Remove this useless assignment to local variable "productDao".( αύ‚ϋÿÿÿÿ8—Λεγα,
+Zsquid:S18549"<Remove this useless assignment to local variable "orderDao".(ΝώΉ8—Λεγα,
+Rsquid:S1481:"/Remove this unused "productDao" local variable.( αύ‚ϋÿÿÿÿ8—Λεγα,
+Ksquid:S14819"-Remove this unused "orderDao" local variable.(ΝώΉ8—Λεγα,
+Msquid:S1611^"/Remove the parentheses around the "t" parameter(€ θΉ8ς°†γα,
