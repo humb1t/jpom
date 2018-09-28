@@ -11,23 +11,27 @@ public class SpecificationDao {
         this.connection = connection;
     }
 
-    public Collection<Specification> getAll() {
+    public static Collection<Specification> getById(Long id) {
         throw new UnsupportedOperationException();
     }
 
-    public Collection<Specification> getByName() {
+    public static Collection<Specification> getAll() {
         throw new UnsupportedOperationException();
     }
 
-    public Specification create(Specification specification) {
+    public static Collection<Specification> getByName(String name) {
         throw new UnsupportedOperationException();
     }
 
-    public Specification update(Specification specification) {
+    public static Specification create(Specification specification) {
         throw new UnsupportedOperationException();
     }
 
-    public void delete(Specification specification) {
+    public static Specification update(Specification specification) {
+        throw new UnsupportedOperationException();
+    }
+
+    public static void delete(Long id) {
         throw new UnsupportedOperationException();
     }
 }

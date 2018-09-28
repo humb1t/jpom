@@ -11,19 +11,19 @@ public class OrderDao {
         this.connection = connection;
     }
 
-    public Collection<Order> getAll() {
+    public static Collection<Order> getAll() {
         throw new UnsupportedOperationException();
     }
 
-    public Order getById(Long id) {
+    public static Order getById(Long id) {
         throw new UnsupportedOperationException();
     }
 
-    public Order create(Order specification) {
+    public static Order create(Order specification) {
         throw new UnsupportedOperationException();
     }
 
-    public Order update(Order specification) {
+    public static Order update(Order specification) {
         throw new UnsupportedOperationException();
     }
 }

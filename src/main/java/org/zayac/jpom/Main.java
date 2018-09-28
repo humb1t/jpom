@@ -59,19 +59,18 @@ public class Main {
         SpecificationDao specificationDao = new SpecificationDao(connection);
         app.routes(() -> {
             path("orders", () -> {
-                ApiBuilder.get(OrderController::getAll);
-                ApiBuilder.post(OrderController::create);
+                ApiBuilder.get(OrderController.getAll);
+                ApiBuilder.post(OrderController.create);
                 path(":id", () -> {
-                    ApiBuilder.get(OrderController::get);
-                    ApiBuilder.post("/start", OrderController::start);
-                    ApiBuilder.post("/cancel", OrderController::cancel);
-                    ApiBuilder.patch(OrderController::update);
-                    ApiBuilder.delete(OrderController::delete);
+                    ApiBuilder.get(OrderController.get);
+                    ApiBuilder.post("/start", OrderController.start);
+                    ApiBuilder.post("/cancel", OrderController.cancel);
+                    ApiBuilder.patch(OrderController.update);
                 });
             });
             path("specifications", () -> {
-                ApiBuilder.get(SpecificationController::getAll);
-                ApiBuilder.post(SpecificationController::create);
+                ApiBuilder.get(SpecificationController.getAll);
+                ApiBuilder.post(SpecificationController.create);
                 path(":id", () -> {
                     ApiBuilder.get(SpecificationController.get);
                     ApiBuilder.patch(SpecificationController.update);

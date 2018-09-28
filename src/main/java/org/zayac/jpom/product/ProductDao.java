@@ -11,15 +11,15 @@ public class ProductDao {
         this.connection = connection;
     }
 
-    public Collection<Product> getAll() {
+    public static Collection<Product> getAll() {
         throw new UnsupportedOperationException();
     }
 
-    public Product getById(Long id) {
+    public static Product getById(Long id) {
         throw new UnsupportedOperationException();
     }
 
-    public Product create(Product product) {
+    public static Product create(Product product) {
         throw new UnsupportedOperationException();
     }
 

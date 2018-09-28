@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9e43281-a216-42c8-b22f-8cd049a4a448" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zayac/jpom/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zayac/jpom/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zayac/jpom/order/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zayac/jpom/order/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zayac/jpom/order/OrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zayac/jpom/order/OrderDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zayac/jpom/product/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zayac/jpom/product/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zayac/jpom/product/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zayac/jpom/product/ProductDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zayac/jpom/specification/SpecificationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zayac/jpom/specification/SpecificationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zayac/jpom/specification/SpecificationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zayac/jpom/specification/SpecificationDao.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,33 +39,33 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="4" />
-          <entry key="gitignore" value="15" />
-          <entry key="java" value="1490" />
-          <entry key="txt" value="40" />
+          <entry key="gitignore" value="224" />
+          <entry key="java" value="2503" />
+          <entry key="txt" value="71" />
           <entry key="xml" value="46" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Git file" value="15" />
-          <entry key="JAVA" value="1490" />
-          <entry key="PLAIN_TEXT" value="44" />
+          <entry key="Git file" value="224" />
+          <entry key="JAVA" value="2503" />
+          <entry key="PLAIN_TEXT" value="75" />
           <entry key="XML" value="46" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="5" />
-          <entry key="gitignore" value="2" />
-          <entry key="java" value="14" />
+          <entry key="class" value="7" />
+          <entry key="gitignore" value="4" />
+          <entry key="java" value="23" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="5" />
-          <entry key="Git file" value="2" />
-          <entry key="JAVA" value="14" />
+          <entry key="CLASS" value="7" />
+          <entry key="Git file" value="4" />
+          <entry key="JAVA" value="23" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
@@ -67,7 +73,96 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/zayac/jpom/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="341">
+              <caret line="71" column="56" lean-forward="true" selection-start-line="71" selection-start-column="56" selection-end-line="71" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/zayac/jpom/product/ProductController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/zayac/jpom/product/ProductDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/zayac/jpom/order/OrderController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="141">
+              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/zayac/jpom/specification/SpecificationController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/zayac/jpom/order/OrderDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+              <folding>
+                <element signature="e#394#395#0" expanded="true" />
+                <element signature="e#451#452#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/zayac/jpom/specification/SpecificationDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="481">
+              <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#340#341#0" expanded="true" />
+                <element signature="e#396#397#0" expanded="true" />
+                <element signature="e#411#412#0" expanded="true" />
+                <element signature="e#468#469#0" expanded="true" />
+                <element signature="e#527#528#0" expanded="true" />
+                <element signature="e#584#585#0" expanded="true" />
+                <element signature="e#655#656#0" expanded="true" />
+                <element signature="e#712#713#0" expanded="true" />
+                <element signature="e#783#784#0" expanded="true" />
+                <element signature="e#840#841#0" expanded="true" />
+                <element signature="e#902#903#0" expanded="true" />
+                <element signature="e#959#960#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -98,16 +193,16 @@
         <option value="$PROJECT_DIR$/src/main/java/HelloWorld.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/zayac/jpom/specification/Specification.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/org/zayac/jpom/specification/SpecificationDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/zayac/jpom/order/Order.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/zayac/jpom/product/Product.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/zayac/jpom/product/ProductDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/zayac/jpom/order/OrderDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/zayac/jpom/order/OrderController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/zayac/jpom/product/ProductController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/zayac/jpom/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/zayac/jpom/specification/SpecificationController.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/org/zayac/jpom/order/OrderDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/zayac/jpom/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/zayac/jpom/order/OrderController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/zayac/jpom/specification/SpecificationDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/zayac/jpom/specification/SpecificationController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/zayac/jpom/product/ProductDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/zayac/jpom/product/ProductController.java" />
       </list>
     </option>
   </component>
@@ -214,18 +309,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="org.zayac.jpom.product" />
-      <recent name="org.zayac.jpom.specification" />
-      <recent name="org.zayac.jpom.order" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Nikita_Puzankov\workspace\personal\zayac\jpom" />
+      <recent name="C:\Users\Nikita_Puzankov\workspace\personal\zayac\jpom\src\main\java\org\zayac\jpom\product" />
+      <recent name="C:\Users\Nikita_Puzankov\workspace\personal\zayac\jpom\src\main\java\org\zayac\jpom\order" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.zayac.jpom.order" />
       <recent name="org.zayac.jpom.product" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Nikita_Puzankov\workspace\personal\zayac\jpom\src\main\java\org\zayac\jpom\product" />
-      <recent name="C:\Users\Nikita_Puzankov\workspace\personal\zayac\jpom\src\main\java\org\zayac\jpom\order" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.zayac.jpom.product" />
+      <recent name="org.zayac.jpom.specification" />
+      <recent name="org.zayac.jpom.order" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -292,10 +388,26 @@
       <option name="presentableId" value="Default" />
       <updated>1538073299187</updated>
     </task>
+    <task id="LOCAL-00001" summary="gitignore">
+      <created>1538162547992</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1538162547992</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Right gitingore">
+      <created>1538162684951</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1538162684951</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49626467" visible="true" weight="0.22557841" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24966533" />
@@ -337,7 +449,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="gitignore" />
+    <MESSAGE value="Right gitingore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Right gitingore" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/org/zayac/jpom/specification/Specification.java">
@@ -361,28 +475,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/zayac/jpom/specification/SpecificationDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#209#210#0" expanded="true" />
-            <element signature="e#253#254#0" expanded="true" />
-            <element signature="e#336#337#0" expanded="true" />
-            <element signature="e#392#393#0" expanded="true" />
-            <element signature="e#446#447#0" expanded="true" />
-            <element signature="e#503#504#0" expanded="true" />
-            <element signature="e#556#557#0" expanded="true" />
-            <element signature="e#613#614#0" expanded="true" />
-            <element signature="e#666#667#0" expanded="true" />
-            <element signature="e#723#724#0" expanded="true" />
-            <element signature="e#768#769#0" expanded="true" />
-            <element signature="e#825#826#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/zayac/jpom/order/Order.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -400,42 +492,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/zayac/jpom/product/ProductDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#467#468#0" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
-            <element signature="e#546#547#0" expanded="true" />
-            <element signature="e#603#604#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/zayac/jpom/order/OrderDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-          <folding>
-            <element signature="e#710#711#0" expanded="true" />
-            <element signature="e#767#768#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/javalin/javalin/2.2.0/javalin-2.2.0.jar!/io/javalin/Javalin.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
           <caret line="107" column="141" selection-start-line="107" selection-start-column="141" selection-end-line="107" selection-end-column="141" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/javalin/javalin/2.2.0/javalin-2.2.0.jar!/io/javalin/Handler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -446,41 +506,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/zayac/jpom/order/OrderController.java">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="260">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/zayac/jpom/product/ProductController.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/io/javalin/javalin/2.2.0/javalin-2.2.0.jar!/io/javalin/Context.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+        <state relative-caret-position="-320">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/zayac/jpom/Main.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/io/javalin/javalin/2.2.0/javalin-2.2.0.jar!/io/javalin/Handler.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="75" column="59" selection-start-line="75" selection-start-column="59" selection-end-line="75" selection-end-column="59" />
+        <state relative-caret-position="140">
+          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/zayac/jpom/specification/SpecificationDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#340#341#0" expanded="true" />
+            <element signature="e#396#397#0" expanded="true" />
+            <element signature="e#411#412#0" expanded="true" />
+            <element signature="e#468#469#0" expanded="true" />
+            <element signature="e#527#528#0" expanded="true" />
+            <element signature="e#584#585#0" expanded="true" />
+            <element signature="e#655#656#0" expanded="true" />
+            <element signature="e#712#713#0" expanded="true" />
+            <element signature="e#783#784#0" expanded="true" />
+            <element signature="e#840#841#0" expanded="true" />
+            <element signature="e#902#903#0" expanded="true" />
+            <element signature="e#959#960#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/zayac/jpom/order/OrderDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+          <folding>
+            <element signature="e#394#395#0" expanded="true" />
+            <element signature="e#451#452#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/zayac/jpom/specification/SpecificationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="280">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/zayac/jpom/order/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/zayac/jpom/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="71" column="56" lean-forward="true" selection-start-line="71" selection-start-column="56" selection-end-line="71" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/zayac/jpom/product/ProductDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="42" column="18" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/zayac/jpom/product/ProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
         </state>
       </provider>
     </entry>
