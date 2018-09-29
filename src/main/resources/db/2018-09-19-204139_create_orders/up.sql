@@ -2,7 +2,7 @@ CREATE TYPE order_status AS ENUM (
     'entering', 'in_progress', 'cancelled', 'completed'
 );
 
-CREATE TABLE orders (
+CREATE TABLE ordersIds (
   id SERIAL PRIMARY KEY,
   specification_id INTEGER NOT NULL,
   product_id INTEGER NOT NULL,

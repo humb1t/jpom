@@ -55,16 +55,20 @@ public class Main {
                     logger.info("--- connection STARTED!");
                     connection.sendPreparedStatement(
                             "CREATE TABLE specifications (id SERIAL PRIMARY KEY, name VARCHAR NOT NULL)"
-                    );
+                    ).join();
+                    logger.info("specifications created");
                     connection.sendPreparedStatement(
                             "CREATE TABLE products (id SERIAL PRIMARY KEY, specification_id INTEGER NOT NULL, FOREIGN KEY (specification_id) REFERENCES specifications(id))"
-                    );
+                    ).join();
+                    logger.info("products created");
                     connection.sendPreparedStatement(
                             "CREATE TYPE order_status AS ENUM ('entering', 'in_progress', 'cancelled', 'completed')"
-                    );
+                    ).join();
+                    logger.info("order_status created");
                     connection.sendPreparedStatement(
                             "CREATE TABLE orders (id SERIAL PRIMARY KEY, specification_id INTEGER NOT NULL, product_id INTEGER NOT NULL, quantity INTEGER NOT NULL, status order_status NOT NULL, FOREIGN KEY (specification_id) REFERENCES specifications(id), FOREIGN KEY (product_id) REFERENCES products(id))"
-                    );
+                    ).join();
+                    logger.info("orders created");
                     logger.info("--- SCHEMA INITIALIZED!");
                 })
                 .event(JavalinEvent.SERVER_STOPPING, () -> {
